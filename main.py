@@ -1,5 +1,3 @@
-# SUPER BEAUTIFUL EXPENSE TRACKER (No Functions, No Imports)
-
 # ==== COLORS ====
 RESET="\033[0m"
 BOLD="\033[1m"
@@ -14,7 +12,7 @@ WHITE="\033[97m"
 # ==== Data ====
 expensesList = []
 
-# ==== Fake Animation Heading ====
+# ==== Animation Heading ====
 for line in ["\n", "Loading Expense Tracker...", ".", "..", "..."]:
     print(MAGENTA + BOLD + line + RESET)
 
@@ -113,8 +111,6 @@ while True:
             print(YELLOW + "──────────────────────────────────────" + RESET)
 
             categories = {}
-
-            # No functions, no defaultdict — pure manual loop
             for e in expensesList:
                 cat = e["category"]
                 amt = e["amount"]
